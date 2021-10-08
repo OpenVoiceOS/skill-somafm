@@ -4,7 +4,7 @@ import requests
 from ovos_utils.parse import fuzzy_match
 from ovos_utils.xml_helper import xml2dict
 from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill, \
-    MediaType, PlaybackType, ocp_search
+    MediaType, PlaybackType, ocp_search, MatchConfidence
 
 
 class SomaFmStation:
@@ -117,16 +117,18 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
 
         if media_type == MediaType.RADIO:
             base_score += 20
-        elif media_type == MediaType.MUSIC:
-            base_score += 10
+        else:
+            base_score -= 10
 
         if self.voc_match(phrase, "somafm"):
-            base_score += 70  # explicit request
+            base_score += 50  # explicit request
             phrase = self.remove_voc(phrase, "somafm")
 
         for ch in self.get_stations():
             score = base_score + \
                     fuzzy_match(ch.title.lower(), phrase.lower()) * 100
+            if score < MatchConfidence.AVERAGE_LOW:
+                continue
             yield {
                 "match_confidence": min(100, score),
                 "media_type": MediaType.RADIO,
@@ -135,7 +137,6 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
                 "image": ch.image,
                 "bg_image": ch.image,
                 "skill_icon": self.skill_icon,
-                "skill_logo": self.skill_icon,
                 "title": ch.title,
                 "author": "SomaFM",
                 "length": 0
