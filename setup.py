@@ -26,7 +26,7 @@ setup(
     name='ovos-skill-somafm',
     version='0.0.1',
     description='ovos somafm skill plugin',
-    url='https://github.com/OpenVoiceOS/skill-somafm',
+    url='https://github.com/OpenVoiceOS/skill-ovos-somafm',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
