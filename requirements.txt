@@ -1,2 +1,2 @@
-ovos_workshop>=0.0.5a1
-radiosoma
+ovos_workshop~=0.0.10
+radiosoma~=0.0.1

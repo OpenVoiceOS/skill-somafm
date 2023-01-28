@@ -63,9 +63,9 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
             phrase = self.remove_voc(phrase, "somafm")
 
         for ch in radiosoma.get_stations():
-            score = base_score + \
-                    fuzzy_match(ch.title.lower(), phrase.lower()) * 100
-            if score <= MatchConfidence.AVERAGE_LOW:
+            score = round(base_score + fuzzy_match(ch.title.lower(),
+                                                   phrase.lower()) * 100)
+            if score <= MatchConfidence.AVERAGE_LOW.value:
                 continue
             yield {
                 "match_confidence": min(100, score),
