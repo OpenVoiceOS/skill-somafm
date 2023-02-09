@@ -14,6 +14,18 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
                                 MediaType.RADIO]
         self.skill_icon = join(dirname(__file__), "ui", "somafm.png")
 
+    @classproperty
+    def runtime_requirements(self):
+        return RuntimeRequirements(internet_before_load=True,
+                                   network_before_load=True,
+                                   gui_before_load=False,
+                                   requires_internet=True,
+                                   requires_network=True,
+                                   requires_gui=False,
+                                   no_internet_fallback=False,
+                                   no_network_fallback=False,
+                                   no_gui_fallback=True)
+
     @ocp_featured_media()
     def featured_media(self):
         return [{
