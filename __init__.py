@@ -4,6 +4,8 @@ import radiosoma
 from ovos_utils.parse import fuzzy_match
 from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill, \
     MediaType, PlaybackType, ocp_search, MatchConfidence, ocp_featured_media
+from ovos_utils.process_utils import RuntimeRequirements
+from ovos_utils import classproperty
 
 
 class SomaFMSkill(OVOSCommonPlaybackSkill):
