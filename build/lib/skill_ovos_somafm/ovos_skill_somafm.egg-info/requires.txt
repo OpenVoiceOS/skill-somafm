@@ -1,0 +1,4 @@
+ovos-plugin-common-play>=0.0.3,~=0.0
+ovos-utils>=0.0.28,~=0.0
+ovos_workshop>=0.0.11,~=0.0
+radiosoma>=0.0.1,~=0.0
