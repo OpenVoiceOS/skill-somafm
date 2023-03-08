@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/8656c7cd58062601897972f0062bdf6c575d5481...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1a1...HEAD)
+
+**Merged pull requests:**
+
+- Stable Dependencies [\#3](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/3) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.1a1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.1a1) (2023-02-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/8656c7cd58062601897972f0062bdf6c575d5481...V0.0.1a1)
 
 **Merged pull requests:**
 
