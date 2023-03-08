@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/HEAD)
+## [V0.0.1a2](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.1a2) (2023-03-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1a1...V0.0.1a2)
 
 **Merged pull requests:**
 
