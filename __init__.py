@@ -1,20 +1,30 @@
 from os.path import join, dirname
 
 import radiosoma
-from ovos_utils.parse import fuzzy_match
-from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill, \
-    MediaType, PlaybackType, ocp_search, MatchConfidence, ocp_featured_media
-from ovos_utils.process_utils import RuntimeRequirements
+
 from ovos_utils import classproperty
+from ovos_utils.ocp import MediaType, PlaybackType
+from ovos_utils.parse import fuzzy_match
+from ovos_utils.process_utils import RuntimeRequirements
+from ovos_workshop.decorators.ocp import ocp_search, ocp_featured_media
+from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 
 
 class SomaFMSkill(OVOSCommonPlaybackSkill):
-    def __init__(self):
-        super().__init__("SomaFM")
-        self.supported_media = [MediaType.GENERIC,
-                                MediaType.MUSIC,
-                                MediaType.RADIO]
+
+    def __init__(self, *args, **kwargs):
+        self.supported_media = [MediaType.MUSIC, MediaType.RADIO]
         self.skill_icon = join(dirname(__file__), "ui", "somafm.png")
+        super().__init__(*args, **kwargs)
+        self.load_ocp_keywords()
+
+    def load_ocp_keywords(self):
+        # register with OCP to help classifier pick MediaType.RADIO
+        self.register_ocp_keyword(MediaType.RADIO,
+                                  "radio_station", [s.title for s in radiosoma.get_stations()])
+        self.register_ocp_keyword(MediaType.RADIO,
+                                  "radio_streaming_provider",
+                                  ["SomaFM", "Soma FM", "Soma"])
 
     @classproperty
     def runtime_requirements(self):
@@ -79,7 +89,7 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
         for ch in radiosoma.get_stations():
             score = round(base_score + fuzzy_match(ch.title.lower(),
                                                    phrase.lower()) * 100)
-            if score <= MatchConfidence.AVERAGE_LOW.value:
+            if score < 50:
                 continue
             yield {
                 "match_confidence": min(100, score),
@@ -93,7 +103,3 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
                 "author": "SomaFM",
                 "length": 0
             }
-
-
-def create_skill():
-    return SomaFMSkill()
