@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1...HEAD)
+
+**Merged pull requests:**
+
+- refactor/ocp [\#5](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/5) ([NeonJarbas](https://github.com/NeonJarbas))
+
+## [V0.0.1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.1) (2023-03-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1a2...V0.0.1)
+
 ## [V0.0.1a2](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.1a2) (2023-03-08)
 
 [Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1a1...V0.0.1a2)
