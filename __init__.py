@@ -14,7 +14,7 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
 
     def __init__(self, *args, **kwargs):
         self.supported_media = [MediaType.MUSIC, MediaType.RADIO]
-        self.skill_icon = join(dirname(__file__), "ui", "somafm.png")
+        self.skill_icon = join(dirname(__file__), "somafm.png")
         super().__init__(*args, **kwargs)
         self.load_ocp_keywords()
 
