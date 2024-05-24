@@ -1,7 +1,6 @@
 from os.path import join, dirname
 
 import radiosoma
-
 from ovos_utils import classproperty
 from ovos_utils.ocp import MediaType, PlaybackType
 from ovos_utils.parse import fuzzy_match
@@ -13,12 +12,11 @@ from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 class SomaFMSkill(OVOSCommonPlaybackSkill):
 
     def __init__(self, *args, **kwargs):
-        self.supported_media = [MediaType.MUSIC, MediaType.RADIO]
-        self.skill_icon = join(dirname(__file__), "somafm.png")
-        super().__init__(*args, **kwargs)
-        self.load_ocp_keywords()
+        super().__init__(supported_media=[MediaType.MUSIC, MediaType.RADIO],
+                         skill_icon=join(dirname(__file__), "somafm.png"),
+                         *args, **kwargs)
 
-    def load_ocp_keywords(self):
+    def initialize(self):
         # register with OCP to help classifier pick MediaType.RADIO
         self.register_ocp_keyword(MediaType.RADIO,
                                   "radio_station", [s.title for s in radiosoma.get_stations()])
