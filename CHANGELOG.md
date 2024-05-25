@@ -1,5 +1,9 @@
 # Changelog
 
+## [V0.0.2a3](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a3) (2024-05-24)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a2...V0.0.2a3)
+
 ## [V0.0.2a2](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a2) (2024-05-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a1...V0.0.2a2)
