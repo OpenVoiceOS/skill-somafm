@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a5...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a6...HEAD)
+
+**Fixed bugs:**
+
+- fix/generic\_queries [\#8](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/8) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.2a6](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a6) (2024-07-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a5...V0.0.2a6)
 
 **Merged pull requests:**
 
