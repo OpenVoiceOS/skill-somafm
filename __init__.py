@@ -1,10 +1,11 @@
 from os.path import join, dirname
 from typing import Iterable
+
 import radiosoma
 from ovos_utils import classproperty
-from ovos_workshop.backwards_compat import MediaType, PlaybackType, MediaEntry, Playlist
 from ovos_utils.parse import fuzzy_match
 from ovos_utils.process_utils import RuntimeRequirements
+from ovos_workshop.backwards_compat import MediaType, PlaybackType, MediaEntry, Playlist
 from ovos_workshop.decorators.ocp import ocp_search, ocp_featured_media
 from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 
@@ -12,7 +13,7 @@ from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 class SomaFMSkill(OVOSCommonPlaybackSkill):
 
     def __init__(self, *args, **kwargs):
-        super().__init__(supported_media=[MediaType.MUSIC, MediaType.RADIO],
+        super().__init__(supported_media=[MediaType.MUSIC, MediaType.RADIO, MediaType.GENERIC],
                          skill_icon=join(dirname(__file__), "somafm.png"),
                          skill_voc_filename="somafm_skill",
                          *args, **kwargs)
@@ -61,19 +62,10 @@ class SomaFMSkill(OVOSCommonPlaybackSkill):
         return pl
 
     @ocp_search()
-    def ocp_somafm_playlist(self, phrase, media_type) -> Iterable[Playlist]:
+    def ocp_somafm_playlist(self, phrase: str, media_type: MediaType) -> Iterable[Playlist]:
         phrase = self.remove_voc(phrase, "radio")
-        if self.voc_match(phrase, "somafm", exact=True):
-            pl = Playlist(media_type=MediaType.RADIO,
-                          title="SomaFM (All stations)",
-                          playback=PlaybackType.AUDIO,
-                          image="https://somafm.com/img3/LoneDJsquare400.jpg",
-                          skill_id=self.skill_id,
-                          artist="SomaFM",
-                          match_confidence=100,
-                          skill_icon=self.skill_icon)
-            pl += self.featured_media()
-            yield pl
+        if self.voc_match(phrase, "somafm", exact=media_type != MediaType.RADIO):
+            yield self.featured_media()
 
     @ocp_search()
     def search_somafm(self, phrase, media_type) -> Iterable[MediaEntry]:
