@@ -1,69 +1,12 @@
 # Changelog
 
-## [V0.0.2a7](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a7) (2024-08-03)
+## [0.1.0a1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/0.1.0a1) (2024-09-10)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a6...V0.0.2a7)
-
-**Fixed bugs:**
-
-- fix/generic\_queries [\#8](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/8) ([JarbasAl](https://github.com/JarbasAl))
-
-## [V0.0.2a6](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a6) (2024-07-11)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a5...V0.0.2a6)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2...0.1.0a1)
 
 **Merged pull requests:**
 
-- feat/skill\_aliases [\#7](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/7) ([JarbasAl](https://github.com/JarbasAl))
-
-## [V0.0.2a5](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a5) (2024-06-21)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a4...V0.0.2a5)
-
-**Merged pull requests:**
-
-- refactor/ocp\_modernize [\#6](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/6) ([JarbasAl](https://github.com/JarbasAl))
-
-## [V0.0.2a4](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a4) (2024-05-25)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a3...V0.0.2a4)
-
-## [V0.0.2a3](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a3) (2024-05-24)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a2...V0.0.2a3)
-
-## [V0.0.2a2](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a2) (2024-05-16)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.2a1...V0.0.2a2)
-
-## [V0.0.2a1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.2a1) (2024-01-08)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1...V0.0.2a1)
-
-**Merged pull requests:**
-
-- refactor/ocp [\#5](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/5) ([NeonJarbas](https://github.com/NeonJarbas))
-
-## [V0.0.1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.1) (2023-03-08)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1a2...V0.0.1)
-
-## [V0.0.1a2](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.1a2) (2023-03-08)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/V0.0.1a1...V0.0.1a2)
-
-**Merged pull requests:**
-
-- Stable Dependencies [\#3](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/3) ([NeonDaniel](https://github.com/NeonDaniel))
-
-## [V0.0.1a1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/V0.0.1a1) (2023-02-23)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/8656c7cd58062601897972f0062bdf6c575d5481...V0.0.1a1)
-
-**Merged pull requests:**
-
-- feat/runtime\_requirements [\#2](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/2) ([JarbasAl](https://github.com/JarbasAl))
-- ovos-core 0.0.6 Compatibility, Automation [\#1](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/1) ([NeonDaniel](https://github.com/NeonDaniel))
+- chore:automations [\#9](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/9) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
