@@ -5,7 +5,7 @@ import radiosoma
 from ovos_utils import classproperty
 from ovos_utils.parse import fuzzy_match
 from ovos_utils.process_utils import RuntimeRequirements
-from ovos_workshop.backwards_compat import MediaType, PlaybackType, MediaEntry, Playlist
+from ovos_utils.ocp import MediaType, PlaybackType, MediaEntry, Playlist
 from ovos_workshop.decorators.ocp import ocp_search, ocp_featured_media
 from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 
