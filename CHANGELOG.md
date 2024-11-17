@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.1.1a1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/0.1.1a1) (2024-10-15)
+## [0.1.2a1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/0.1.2a1) (2024-11-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/0.1.0...0.1.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/0.1.1...0.1.2a1)
 
 **Merged pull requests:**
 
-- fix:update\_requirements [\#11](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/11) ([JarbasAl](https://github.com/JarbasAl))
+- fix: skilljson [\#14](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/14) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
