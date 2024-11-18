@@ -1,4 +1,4 @@
-# <img src='./ui/somafm.png' card_color='#40DBB0' width='50' height='50' style='vertical-align:bottom'/> SomaFM
+# <img src='./res/somafm.png' card_color='#40DBB0' width='50' height='50' style='vertical-align:bottom'/> SomaFM
 
 OCP skill for SomaFM
 
