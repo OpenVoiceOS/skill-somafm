@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.1.3a1](https://github.com/OpenVoiceOS/skill-ovos-somafm/tree/0.1.3a1) (2024-11-18)
+## [0.1.4a1](https://github.com/OpenVoiceOS/ovos-skill-somafm/tree/0.1.4a1) (2024-12-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-somafm/compare/0.1.2...0.1.3a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-somafm/compare/0.1.3...0.1.4a1)
 
 **Merged pull requests:**
 
-- fix: icon [\#16](https://github.com/OpenVoiceOS/skill-ovos-somafm/pull/16) ([JarbasAl](https://github.com/JarbasAl))
+- import galician translations [\#18](https://github.com/OpenVoiceOS/ovos-skill-somafm/pull/18) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
