@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.1.5a1](https://github.com/OpenVoiceOS/ovos-skill-somafm/tree/0.1.5a1) (2024-12-02)
+## [0.1.6a1](https://github.com/OpenVoiceOS/ovos-skill-somafm/tree/0.1.6a1) (2025-01-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-somafm/compare/0.1.4...0.1.5a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-somafm/compare/0.1.5...0.1.6a1)
 
 **Merged pull requests:**
 
-- import basque translations [\#20](https://github.com/OpenVoiceOS/ovos-skill-somafm/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+- fix automations [\#22](https://github.com/OpenVoiceOS/ovos-skill-somafm/pull/22) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
